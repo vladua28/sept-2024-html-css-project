@@ -42,10 +42,10 @@ body {
     line-height: 1;
 }
 
-/*.wrapper {*/
-/*    min-height: 100%;*/
-/*    overflow: hidden;*/
-/*}*/
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
 
 /*----------------- GLOBAL -----------------*/
 
@@ -233,18 +233,33 @@ section:not(.feedback) {
 /*-------------------- FEEDBACK -----------------------*/
 
 .feedback {
-    width: 100%;
+    padding: 50px 0 185px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color: #FF7315;
 }
 
-.feedback .w-1140 {
-    width: 100%;
-    max-width: none;
+.feedback h2 {
+    text-align: center;
+    line-height: 60px;
+    color: #F9F9F9;
+    width: 609px;
+    margin-bottom: 120px;
 }
 
-.feedback h2 {
-    margin-bottom: 120px;
+.feedback__cards {
+    display: flex;
+    gap: 80px;
+}
 
+.feedback__card {
+    font-size: 24px;
+    line-height: normal;
+    width: 529px;
+    border-radius: 30px;
+    background: #F9F9F9;
+    padding: 24px 55px 11px;
 }
 
 
@@ -257,4 +272,25 @@ footer {
 }
 
 
+/*-------------------- CONTACT -----------------------*/
+
+.contact {
+    padding: 50px 100px 50px 75px;
+    border-radius: 25px;
+    background: #FF7315;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__title {
+    color: #F9F9F9;
+    width: 343px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 62px;
+}
+
+.contact__button {
+}
 
