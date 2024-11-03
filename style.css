@@ -56,18 +56,16 @@ body {
 }
 
 section {
-    margin-bottom: 125px;
+    margin: 0 auto 125px;
+}
+
+section:not(.feedback) {
+    max-width: 1140px;
 }
 
 .title {
     font-size: 40px;
     font-weight: 600;
-}
-
-.w-1440 {
-    width: 100%;
-    max-width: 1140px;
-    margin: 0 auto;
 }
 
 /*-------------------- BIO -----------------------*/
@@ -235,7 +233,13 @@ section {
 /*-------------------- FEEDBACK -----------------------*/
 
 .feedback {
+    width: 100%;
     background-color: #FF7315;
+}
+
+.feedback .w-1140 {
+    width: 100%;
+    max-width: none;
 }
 
 .feedback h2 {
