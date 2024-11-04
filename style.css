@@ -64,8 +64,18 @@ section:not(.feedback) {
 }
 
 .title {
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 600;
+}
+
+button {
+    transition: 0.5s;
+}
+
+button:hover {
+    cursor: pointer;
+    scale: 1.05;
+    transition: 0.5s;
 }
 
 /*-------------------- BIO -----------------------*/
@@ -110,7 +120,6 @@ section:not(.feedback) {
     font-size: 18px;
     font-weight: 500;
     border-radius: 10px;
-    transition: 0.5s;
 }
 
 .bio__button:first-child {
@@ -122,12 +131,6 @@ section:not(.feedback) {
     background: #F9F9F9;
     color: rgba(34, 34, 34, 0.50);
     border: 2px solid #FF9B70;
-}
-
-.bio__button:hover {
-    cursor: pointer;
-    scale: 1.05;
-    transition: 0.5s;
 }
 
 .bio__portrait {
@@ -181,7 +184,9 @@ section:not(.feedback) {
 .skills__cards {
     width: 100%;
     display: flex;
+    gap: 30px;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -262,14 +267,46 @@ section:not(.feedback) {
     padding: 24px 55px 11px;
 }
 
+/*-------------------- PRICE PLANS -----------------------*/
 
-footer {
-    background: #F1F1F1;
-    font-size: 18px;
-    font-weight: 500;
-    text-align: center;
-    padding: 64px 0 79px 0;
+.price {
 }
+
+.price__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 67px;
+}
+
+.price__card {
+    width: 335px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    background: #F9F9F9;
+    box-shadow: 0 20px 40px 0 rgba(255, 115, 21, 0.10);
+}
+
+.price__card-title {
+    width: 100%;
+    padding: 18px 0;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #F9F9F9;
+    background-color: #FF9B70;
+}
+
+/*.price__card-included:before {*/
+/*    content: '';*/
+/*    width: 100%;*/
+/*    height: 1px;*/
+/*    display: block;*/
+/*    margin-bottom: 20px;*/
+/*    background-image: url("./img/check.png");*/
 
 
 /*-------------------- CONTACT -----------------------*/
@@ -292,5 +329,71 @@ footer {
 }
 
 .contact__button {
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 17px 74px;
+    transition: 0.5s;
 }
+
+/*-------------------- BLOG -----------------------*/
+
+.blog h2 {
+    margin-bottom: 50px;
+}
+
+.blog__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.blog__card {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px 60px 15px;
+    border-radius: 15px;
+    background: #F9F9F9;
+    box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.07);
+    text-transform: capitalize;
+    transition: 1s;
+}
+
+.blog__card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.blog__card img {
+    border-radius: 15px;
+    margin-bottom: 24px;
+}
+
+.blog__card-title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.blog__card-text {
+    color: rgba(34, 34, 34, 0.50);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+/*-------------------- FOOTER -----------------------*/
+
+
+footer {
+    background: #F1F1F1;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    padding: 64px 0 79px 0;
+}
+
 
