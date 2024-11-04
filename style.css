@@ -146,7 +146,6 @@ button:hover {
 
 .achievements {
     display: flex;
-    /*flex-wrap: wrap;*/
     color: #F9F9F9;;
     background-color: #FF7315;
     border-radius: 35px;
@@ -324,6 +323,8 @@ button:hover {
 }
 
 .price__card-payment {
+    display: flex;
+    align-items: center;
     color: rgba(34, 34, 34, 0.50);
     font-size: 15px;
     line-height: 24px;
@@ -335,6 +336,7 @@ button:hover {
     font-size: 32px;
     font-weight: 700;
     line-height: 123.6%;
+    margin-right: 12px;
 }
 
 
